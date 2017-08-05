@@ -1,5 +1,9 @@
 - hosts: all
+  become: true
   vars_files:
     - "vars/all.yml"
   roles:
-    - { role: role }
+    - {role: role.swap}
+    - { role: role.ufw }
+    - { role: role.postgres }
+    - { role: role.otrs }
