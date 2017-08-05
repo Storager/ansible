@@ -1,2 +1,9 @@
 ---
 become: yes
+ufw_ports:
+  - {num: 22, proto: "tcp"}
+  - {num: 80, proto: "tcp"}
+
+pg_db: otrs
+pg_user: otrs
+pg_password: 'gfhjkm'
