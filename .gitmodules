@@ -1,0 +1,12 @@
+[submodule "roles/role.otrs"]
+	path = roles/role.otrs
+	url = https://github.com/Storager/role.otrs.git
+[submodule "roles/role.postgres"]
+	path = roles/role.postgres
+	url = https://github.com/Storager/role.postgres.git
+[submodule "roles/role.swap"]
+	path = roles/role.swap
+	url = https://github.com/Storager/role.swap.git
+[submodule "roles/role.ufw"]
+	path = roles/role.ufw
+	url = https://github.com/Storager/role.ufw.git
