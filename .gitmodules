@@ -4,6 +4,6 @@
 [submodule "roles/role.swap"]
 	path = roles/role.swap
 	url = https://github.com/Storager/role.swap
-[submodule "role.docker"]
+[submodule "roles/role.docker"]
 	path = roles/role.docker
 	url = https://github.com/Storager/role.docker.git
