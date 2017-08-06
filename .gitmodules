@@ -1,3 +1,9 @@
 [submodule "roles/role.ufw"]
 	path = roles/role.ufw
 	url = https://github.com/Storager/role.ufw
+[submodule "roles/role.swap"]
+	path = roles/role.swap
+	url = https://github.com/Storager/role.swap
+[submodule "role.docker"]
+	path = roles/role.docker
+	url = https://github.com/Storager/role.docker.git

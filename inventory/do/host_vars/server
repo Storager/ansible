@@ -1,0 +1,2 @@
+ansible_ssh_host: 104.236.253.181
+ansible_ssh_user: root
