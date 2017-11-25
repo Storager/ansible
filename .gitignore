@@ -1,0 +1,7 @@
+### Specific files
+Vagrantfile
+
+### File MASKs
+
+*.retry
+*.log

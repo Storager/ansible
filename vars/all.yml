@@ -1,2 +1,8 @@
 ---
-become: yes
+ufw_ports:
+  - {num: '22', proto: 'tcp'}
+  - {num: '80', proto: 'tcp'}
+  - {num: '443', proto: 'tcp'}
+  - {num: '2222', proto: 'tcp'}
+
+gitlab_url: "http://storager.ddns.net/gitlab"
