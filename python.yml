@@ -2,4 +2,4 @@
   become: true
   gather_facts: False
   tasks:
-  - raw: "apt-get update && apt-get install -y python-minimal"
+  - raw: "type /usr/bin/python 2>/dev/null || (apt-get update && apt-get install -y python-minimal)"
