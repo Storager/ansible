@@ -5,4 +5,6 @@ ufw_ports:
   - {num: '443', proto: 'tcp'}
   - {num: '2222', proto: 'tcp'}
 
-gitlab_url: "http://storager.ddns.net/gitlab"
+selenium_browser: "chrome"
+selenium_version: "3.5.3-boron"
+selenium_capacity: 3
