@@ -4,5 +4,5 @@
     - "vars/all.yml"
   roles:
     - { role: role.ufw }
-    - { role: role.swap}
+    - { role: role.swap, tags: ['swap']}
     - { role: role.docker}
