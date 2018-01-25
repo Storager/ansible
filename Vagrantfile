@@ -13,6 +13,8 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "ubuntu/xenial64"
+  config.vm.hostname = "vagrant.exam.ple"
+  config.vm.define "grid"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -56,6 +58,7 @@ Vagrant.configure("2") do |config|
     # Customize the amount of memory on the VM:
     vb.memory = "4096"
     vb.cpus = "4"
+    vb.customize ["modifyvm", :id, "--cpuexecutioncap", "50"]
   end
   #
   # View the documentation for the provider you are using for more
@@ -73,6 +76,7 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
    config.vm.provision "shell", inline: <<-SHELL
      apt-get update
+     apt-key add /vagrant/files/docker.gpg
      apt-get install -y ansible python
      ansible-playbook -i localhost, -c local /vagrant/site.yml
    SHELL
